@@ -5,8 +5,5 @@ import com.fastcampuspay.membership.domain.Membership;
 
 public interface FindMembershipPort {
 
-     MembershipJpaEntity findMembership(
-            Membership.MembershipId membershipId
-
-     );
+     MembershipJpaEntity findMembership(Membership.MembershipId membershipId);
 }

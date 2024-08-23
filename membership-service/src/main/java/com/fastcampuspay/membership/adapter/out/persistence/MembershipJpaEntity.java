@@ -3,18 +3,20 @@ package com.fastcampuspay.membership.adapter.out.persistence;
 
 import lombok.Getter;
 import lombok.NoArgsConstructor;
+import lombok.Setter;
 
 import javax.persistence.*;
 
 @Entity
 @Getter
+@Setter
 @NoArgsConstructor
 @Table(name = "membership")
 public class MembershipJpaEntity {
 
     @Id
-    @GeneratedValue(strategy= GenerationType.IDENTITY)
-    private String membershipId;
+    @GeneratedValue
+    private Long membershipId;
 
     private String name;
 
@@ -37,7 +39,7 @@ public class MembershipJpaEntity {
     @Override
     public String toString() {
         return "MembershipJapEntity{" +
-                "membershipId='" + membershipId + '\'' +
+                "membershipId=" + membershipId +
                 ", name='" + name + '\'' +
                 ", address='" + address + '\'' +
                 ", email='" + email + '\'' +

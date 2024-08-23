@@ -8,7 +8,6 @@ import lombok.Value;
 @AllArgsConstructor(access = AccessLevel.PRIVATE)
 public class Membership {
 
-
     @Getter private final String membershipId;
 
     @Getter private final String name;
